@@ -6,7 +6,7 @@ Release: 1%{?dist}
 License: GPL
 Group: System Environment/Base
 Source0: RPM-GPG-KEY-CentOS-SIG-Atomic
-Source1: centos-release-adb.repo
+Source1: CentOS-release-adb.repo
 URL: http://wiki.centos.org/SpecialInterestGroup/Atomic
 
 BuildArch: noarch
@@ -26,7 +26,7 @@ Provided files required by release components for ADB
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
 install -m 644 %SOURCE0 $RPM_BUILD_ROOT/etc/pki/rpm-gpg/
-install -D -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d/centos-release-adb.repo
+install -D -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-release-adb.repo
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -34,7 +34,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Atomic
-%config(noreplace) %{_sysconfdir}/yum.repos.d/centos-release-adb.repo
+%config(noreplace) %{_sysconfdir}/yum.repos.d/CentOS-release-adb.repo
 
 %changelog
 
