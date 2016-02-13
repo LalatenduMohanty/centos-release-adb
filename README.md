@@ -7,4 +7,6 @@ Package contains following
 
 Building the SRC RPM
 --------------------
-rpmbuild -bs --define "_sourcedir $PWD" --define "_srcrpmdir $PWD"  --define "dist .el7.centos" centos-release-adb.spec
+```
+rpmbuild -bs --define "_sourcedir $PWD" --define "_srcrpmdir $PWD"  --define "dist .el7" centos-release-adb.spec
+```
