@@ -1,14 +1,14 @@
 #Repo for ADB RPMs
 
 [centos7-adb]
-name=CentOS-$releasever - Gluster 3.7
+name=CentOS-$releasever - ADB
 baseurl=http://mirror.centos.org/centos/$releasever/atomic/$basearch/adb/
 gpgcheck=1
 enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Atomic
 
 [centos7-adb-test]
-name=CentOS-$releasever - Gluster 3.7 Testing
+name=CentOS-$releasever - ADB Testing
 baseurl=http://buildlogs.centos.org/centos/$releasever/atomic/$basearch/adb/
 gpgcheck=0
 enabled=0
